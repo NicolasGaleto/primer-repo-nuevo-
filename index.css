@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    
+
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+.lista li {
+    padding-left: 16px;
+}
+
+@media screen and (min-width: 300px) {
+    .header.header {
+        background-color: green;
+        height: 200px;
+
+    }
+}
+
+@media ( min-width: 700px) {
+    .header {
+        background-color: red;
+        max-width: 1000px;
+    }
+}
+
+/*  transiciones  */
+
+.lista li {
+    transition-property: font-size color ;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+
+}
+
+/*  transformaciones  */
+
+.logo {
+    transform: translatex(100px);
+    transform: translatey(100px);
+}
